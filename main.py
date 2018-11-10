@@ -107,7 +107,7 @@ def spectr(filename):
     return spectr
 start = time.time()
 filename_holder = open('name_input_file.txt', 'r').read().split()
-filename = 'data/' + str(filename_holder[0])
+filename = str(filename_holder[0])
 Spectr = spectr(filename)
 
 output = open('output.txt', 'w')
